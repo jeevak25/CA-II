@@ -32,7 +32,7 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8080/post", {
+    fetch(`${process.env.REACT_APP_API_URL}/post`, {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",

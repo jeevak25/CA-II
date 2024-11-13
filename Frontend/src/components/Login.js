@@ -11,7 +11,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/user/login', { username, password });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/user/login`, { username, password });
             alert('Login successful');
             navigate('/employee/feed');
         } catch (error) {

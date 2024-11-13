@@ -33,7 +33,12 @@ const Home = () => {
           </ul>
         </div>
       </div>
+
+
   );
+
+
 };
 
+console.log(`Here : ${process.env.REACT_APP_API_URL}`); // Should log http://localhost:8080 if .env is set up correctly
 export default Home;
